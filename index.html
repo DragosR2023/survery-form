@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">This is a practical test to earn a certification</p>
+        <form action="post" id="survey-form">
+            <label for="name" id="name-label">Your Name: <br><input type="text" name="name" id="name" required
+                placeholder="ex. John"></label>
+            <label for="email" id="email-label">Your Email: <br><input type="email" name="email" id="email" required
+                placeholder="ex. john@yahoo.com"></label>
+            <label for="number" id="number-label">Your age: <br><input type="number" name="age" id="number" required
+                min="1" max="120" placeholder="ex. 69"></label>
+            <label for="dropdown" id="dropdownlabel">Your gender:
+                <select name="gender" id="dropdown">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </label>
+            <label for="radioButtons" id="radio"><em>Choose one:</em><br>
+                <input type="radio" name="radio" class="radioButtons" value="Rock">Rock
+                <input type="radio" name="radio" class="radioButtons" value="Hip Hop">Hip Hop
+                <input type="radio" name="radio" class="radioButtons" value="Pop">Pop
+            </label>
+            <label for="checkbox" id="checkbox">What's your personality?
+                <label for="introvert" id="iLabel">
+                    <input type="checkbox" name="introvert" id="introvert" value="introvert" checked>Introvert
+                </label>
+                <label for="Extrovert" id="eLabel">
+                    <input type="checkbox" name="extrovert" id="extrovert" value="extrovert">Extrovert
+                </label>
+            </label>
+            <label for="comments" id="textarea">Any comments?<br>
+                <textarea name="bio" id="comments" cols="50" rows="10"></textarea>
+            </label>
+            <input type="submit" value="Submit" id="submit">
+        </div>
+    </form>
+</body>
+</html>
